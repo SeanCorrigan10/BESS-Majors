@@ -42,11 +42,10 @@ sorted_role_rank_options = sorted(role_rank_options)
 
 role_rank_quest = {"Rank the top 3 roles that interest you for your future career? eg. 3, 5, 1" : sorted_role_rank_options}
 
-possible_values = list(range(1,8))
 rank_list = ['first', 'second', 'third']
 
 for question, option in role_rank_quest.items():
-    print(f'\n ----------------------------DECISION TREE QUIZ START---------------------------- \n{question}')
+    print(f'\n ----------------------------DECISION TREE QUIZ START---------------------------- \n{question} \n')
 
     sorted_options = sorted(option)
     for label, options in enumerate(sorted_options):
